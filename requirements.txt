@@ -1,0 +1,4 @@
+streamlit
+azure-ai-textanalytics
+azure-core
+pandas
