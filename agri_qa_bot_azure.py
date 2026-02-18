@@ -57,3 +57,7 @@ if user_question:
                 st.write("Azure Key Phrase extraction failed:", e)
     else:
         st.write("Sorry, I don't have an answer for that question yet.")
+# Add keys and endpoint
+# Redeploy trigger - no code change
+# "Update Azure key and endpoint with real values"
+#
