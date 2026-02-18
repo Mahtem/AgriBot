@@ -26,8 +26,12 @@ endpoint = os.getenv("AZURE_ENDPOINT")
 
 client = TextAnalyticsClient(endpoint=endpoint, credential=AzureKeyCredential(key))
 
-# --- Load Q&A dataset ---
-with open(r"D:\Azure_Project\agri_qa.json", "r", encoding="utf-8") as f:
+# Get the path relative to this script
+current_dir = os.path.dirname(__file__)
+qa_file_path = os.path.join(current_dir, "agri_qa.json")
+
+# Open the JSON file
+with open(qa_file_path, "r", encoding="utf-8") as f:
     qa_pairs = json.load(f)
 
 # --- User input ---
